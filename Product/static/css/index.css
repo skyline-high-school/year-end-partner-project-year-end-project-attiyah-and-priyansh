@@ -18,7 +18,7 @@ a {
 
 /* navbar */
 #navbar {
-    background: #F30031;
+    background: #90ee90;
     color: whitesmoke;
     overflow: auto;
     padding: 20px 10px;
@@ -50,7 +50,7 @@ a {
 
 #navbar ul li a:hover,
 #navbar ul li a.active {
-    background: #FF0033;
+    background: #98fb98;
     font-weight: 1000;
     border-radius: 5px;
 }
@@ -84,7 +84,7 @@ a {
     display: inline-block;
     font-size: 18px;
     color: white;
-    background: #FF0033;
+    background: #90ee90;
     padding: 13px 20px;
     border: none;
     cursor: pointer;
