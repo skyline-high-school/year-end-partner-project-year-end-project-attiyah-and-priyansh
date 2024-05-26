@@ -57,7 +57,7 @@ a {
 
 /* Showcase */
 #showcase {
-    background: url("./showcase.png") no-repeat center center/cover;
+    background: url("./showcase.jpg") no-repeat center center/cover;
 }
 
 .about-img {
@@ -92,14 +92,14 @@ a {
 }
 
 #showcase a:hover {
-    background: #FF0033;
+    background: #98fb98;
     font-weight: 1000;
     border-radius: 50px;
 }
 
 .btn:hover {
-    background: #FF0033;
-    color: black;
+    
+    color: white;
     font-weight: 1000;
 }
 
@@ -109,7 +109,7 @@ a {
 }
 
 .why-primary {
-    color: #FF0033;
+    color: #98fb98;
 }
 
 .lead {
