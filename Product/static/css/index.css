@@ -125,7 +125,7 @@ a {
 }
 
 .bg-primary {
-    background: #F30031 !important;
+    background: #90ee90 !important;
 }
 
 .showcase-content {
@@ -138,13 +138,16 @@ a {
 #home-info {
     height: 700px;
     color: white;
+    display: flex;
+    align-items: center; /* Center align the content vertically */
 }
 
 #home-info .info-img {
     float: left;
     width: 50%;
-    min-height: 100%;
+    height: 700px;
     overflow: hidden;
+    background-size: cover; /* Ensure the image covers the entire container */
 }
 
 #home-info .info-content {
@@ -153,10 +156,10 @@ a {
     height: 94.5%;
     text-align: center;
     overflow: hidden;
-}
-
-#home-info .info-content {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center align the content vertically */
 }
 
 .body_info {
@@ -407,3 +410,28 @@ hr {
           width: 90%;
       }
   }
+
+
+/* Fade-out effect for the top */
+.fade-out {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15%; /* Adjust height as needed */
+    pointer-events: none;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    z-index: 10;
+}
+
+/* Fade-in effect for the bottom */
+.fade-in {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15%; /* Adjust height as needed */
+    pointer-events: none;
+    background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    z-index: 10;
+}
