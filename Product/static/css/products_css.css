@@ -413,7 +413,20 @@ hr {
           width: 90%;
       }
   }
-
+/* Rounded "Add to Cart" Button */
+.card-link {
+    display: inline-block;
+    background-color: #90ee90;
+    color: #fff;
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 20px; /* Adjust border-radius to make it more or less round */
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .card-link:hover {
+    background-color: #98fb98;
+  }
+  
 
 
 /* .fade-out {
