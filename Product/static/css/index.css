@@ -126,6 +126,7 @@ a {
 
 .bg-primary {
     background: #90ee90 !important;
+    align-items: stretch;
 }
 
 .showcase-content {
@@ -169,6 +170,8 @@ a {
 
 #features {
     height: fit-content;
+
+    align-items: stretch; 
 }
 
 #features .bg-light {
@@ -320,7 +323,7 @@ hr {
     align-items: center;
     vertical-align: bottom;
     padding: 1rem;
-    color: #F30031;
+    color: #0096f3;
 }
 
 .home__social-link {
@@ -412,26 +415,26 @@ hr {
   }
 
 
-/* Fade-out effect for the top */
-.fade-out {
+
+/* .fade-out {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 15%; /* Adjust height as needed */
+    height: 15%; 
     pointer-events: none;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
     z-index: 10;
 }
 
-/* Fade-in effect for the bottom */
+
 .fade-in {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 15%; /* Adjust height as needed */
+    height: 15%;
     pointer-events: none;
     background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
     z-index: 10;
-}
+} */
