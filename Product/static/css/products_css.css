@@ -424,8 +424,10 @@ hr {
   }
   
   .card-link:hover {
-    background-color: #98fb98;
-  }
+    background: #98fb98;
+    font-weight: 1000;
+    border-radius: 5px;
+}
   
 
 
