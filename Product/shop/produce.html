@@ -12,19 +12,19 @@
 </head>
 <body>
 <nav id="navbar">
-        <div class="container-fluid">
-            <div class="logo">
-                <a href="../index.html">
-                    <img class="logo" src="../static/images/shop.png" alt="Logo Here" style="width: 55px; height: 55px;">
-                </a>
-            </div>
-            <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../about/about.html">About Us</a></li>
-                    <li><a href="produce.html">Products</a></li>
-                    <li><a href="../cart/shop_cart.html" style="size: 24px;"><i class="ri-shopping-cart-2-line" style="font-size: 22px;"></i></a></li>
-            </ul>
+    <div class="container-fluid">
+        <div class="logo">
+            <a href="../index.html">
+                <img class="logo" src="../static/images/shop.png" alt="Logo Here" style="width: 55px; height: 55px;">
+            </a>
         </div>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about/about.html">About Us</a></li>
+            <li><a href="produce.html">Products</a></li>
+            <li><a href="../cart/shop_cart.html" style="size: 24px;"><i class="ri-shopping-cart-2-line" style="font-size: 22px;"></i></a></li>
+        </ul>
+    </div>
 </nav>
 
 <!-- Products -->
@@ -39,7 +39,7 @@
                     <h5 class="card-title">Banana</h5>
                     <h6 class="card-subtitle mb-2 text-muted">$0.50 each</h6>
                     <p class="card-text">Fresh and ripe bananas, perfect for a healthy snack.</p>
-                    <a href="#" class="card-link">Add to Cart</a>
+                    <a href="#" class="card-link" onclick="addToCart('Banana', 0.50)">Add to Cart</a>
                 </div>
             </div>
         </div>
@@ -51,7 +51,7 @@
                     <h5 class="card-title">Strawberry</h5>
                     <h6 class="card-subtitle mb-2 text-muted">$3.00 per pack</h6>
                     <p class="card-text">Sweet and juicy strawberries, great for desserts and snacks.</p>
-                    <a href="#" class="card-link">Add to Cart</a>
+                    <a href="#" class="card-link" onclick="addToCart('Strawberry', 3.00)">Add to Cart</a>
                 </div>
             </div>
         </div>
@@ -63,25 +63,24 @@
                     <h5 class="card-title">Apple</h5>
                     <h6 class="card-subtitle mb-2 text-muted">$1.00 each</h6>
                     <p class="card-text">Crisp and sweet apples, perfect for a quick snack.</p>
-                    <a href="#" class="card-link">Add to Cart</a>
+                    <a href="#" class="card-link" onclick="addToCart('Apple', 1.00)">Add to Cart</a>
                 </div>
             </div>
         </div>
-        <!-- Product Card 4 -->
         <div class="col">
             <div class="card">
-                <img class="card-img-top" src="../static/images/grapes.jpg" alt="grape">
+                <img class="card-img-top" src="../static/images/grapes.jpg" alt="Grapes">
                 <div class="card-body">
                     <h5 class="card-title">Grapes</h5>
                     <h6 class="card-subtitle mb-2 text-muted">$0.80 each</h6>
                     <p class="card-text">Crunchy and green grapes, great for a refreshing treat.</p>
-                    <a href="#" class="card-link">Add to Cart</a>
+                    <a href="#" class="card-link" onclick="addToCart('Grapes', 0.80)">Add to Cart</a>
                 </div>
             </div>
         </div>
-    </div>
+    </div> <!-- div for row -->
 
-    <!-- Row 1 -->
+    <!-- Row  -->
     <div class="row row-cols-4" style="margin-top: 25px; margin-bottom: 25px;">
         <!-- Product Card 1 -->
         <div class="col">
@@ -91,7 +90,7 @@
                     <h5 class="card-title">Banana</h5>
                     <h6 class="card-subtitle mb-2 text-muted">$0.50 each</h6>
                     <p class="card-text">Fresh and ripe bananas, perfect for a healthy snack.</p>
-                    <a href="#" class="card-link">Add to Cart</a>
+                    <a href="#" class="card-link" onclick="addToCart('Banana', 0.50)">Add to Cart</a>
                 </div>
             </div>
         </div>
@@ -103,7 +102,7 @@
                     <h5 class="card-title">Strawberry</h5>
                     <h6 class="card-subtitle mb-2 text-muted">$3.00 per pack</h6>
                     <p class="card-text">Sweet and juicy strawberries, great for desserts and snacks.</p>
-                    <a href="#" class="card-link">Add to Cart</a>
+                    <a href="#" class="card-link" onclick="addToCart('Strawberry', 3.00)">Add to Cart</a>
                 </div>
             </div>
         </div>
@@ -115,28 +114,34 @@
                     <h5 class="card-title">Apple</h5>
                     <h6 class="card-subtitle mb-2 text-muted">$1.00 each</h6>
                     <p class="card-text">Crisp and sweet apples, perfect for a quick snack.</p>
-                    <a href="#" class="card-link">Add to Cart</a>
+                    <a href="#" class="card-link" onclick="addToCart('Apple', 1.00)">Add to Cart</a>
                 </div>
             </div>
         </div>
-        <!-- Product Card 4 -->
         <div class="col">
             <div class="card">
-                <img class="card-img-top" src="../static/images/grapes.jpg" alt="grape">
+                <img class="card-img-top" src="../static/images/grapes.jpg" alt="Grapes">
                 <div class="card-body">
                     <h5 class="card-title">Grapes</h5>
                     <h6 class="card-subtitle mb-2 text-muted">$0.80 each</h6>
                     <p class="card-text">Crunchy and green grapes, great for a refreshing treat.</p>
-                    <a href="#" class="card-link">Add to Cart</a>
+                    <a href="#" class="card-link" onclick="addToCart('Grapes', 0.80)">Add to Cart</a>
                 </div>
             </div>
         </div>
-    </div>
-
-</div>
+    </div> <!-- div for row -->
+</div> <!-- div for products -->
 
 <div class="clr"></div>
-<footer id="main-footer">GroceryGrove &copy; 2024. All Rights Reserved</footer>      
+<footer id="main-footer">GroceryGrove &copy; 2024. All Rights Reserved</footer>
+<script>
+    // JavaScript code for adding products to cart
+    function addToCart(productName, price) {
+        let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+        cartItems.push({ name: productName, price: price });
+        localStorage.setItem('cart', JSON.stringify(cartItems));
+        alert(productName + ' has been added to the cart!');
+    }
+</script>
 </body>
 </html>
-  
