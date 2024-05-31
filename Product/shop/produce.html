@@ -22,7 +22,10 @@
             <li><a href="../index.html">Home</a></li>
             <li><a href="../about/about.html">About Us</a></li>
             <li><a href="produce.html">Products</a></li>
-            <li><a href="../cart/shop_cart.html" style="size: 24px;"><i class="ri-shopping-cart-2-line" style="font-size: 22px;"></i></a></li>
+            <li><a href="../cart/shop_cart.html" style="size: 24px; position: relative;">
+                <i class="ri-shopping-cart-2-line" style="font-size: 22px;"></i>
+                <span id="cartCount" class="cart-count">0</span>
+            </a></li>
         </ul>
     </div>
 </nav>
@@ -134,14 +137,6 @@
 
 <div class="clr"></div>
 <footer id="main-footer">GroceryGrove &copy; 2024. All Rights Reserved</footer>
-<script>
-    // JavaScript code for adding products to cart
-    function addToCart(productName, price) {
-        let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
-        cartItems.push({ name: productName, price: price });
-        localStorage.setItem('cart', JSON.stringify(cartItems));
-        alert(productName + ' has been added to the cart!');
-    }
-</script>
+<script src="../static/script.js"></script>
 </body>
 </html>
