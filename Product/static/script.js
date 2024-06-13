@@ -35,7 +35,7 @@ function addToCart(productName, price) {
     }
     localStorage.setItem('cart', JSON.stringify(cartItems));
     updateCartCount();
-    alert(productName + ' has been added to the cart!');
+    // alert(productName + ' has been added to the cart!');
 }
 
 // Call the function initially to set the initial count
